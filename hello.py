@@ -303,7 +303,6 @@ def main():
     args = parser.parse_args()
 
     random.seed(42)
-    print("Roll No : 2022A7PS1124G")
     print("")
     if args.mode in ('baseline','improved'):
         m = 300

@@ -174,7 +174,6 @@ def main_run():
     read_duration_seconds = after_read_time - main_start_time
     time_left_for_ga = TOTAL_ALLOWED - read_duration_seconds
     if time_left_for_ga <= 0:
-        print("Roll No : 2022A7PS1124G")
         print(f"Number of clauses in CSV file : {len(cnf_clauses_list)}")
         print("Time limit reached before GA could start.")
         sys.exit(1)  # no time left
@@ -188,7 +187,6 @@ def main_run():
     signed_model_representation = [(i + 1) if model_solution[i] else -(i + 1)
                                    for i in range(len(model_solution))]
     total_elapsed_time = time.time() - main_start_time
-    print("Roll No : 2022A7PS1124G")
     print(f"Number of clauses in CSV file : {len(cnf_clauses_list)}")
     print(f"Best model : [{', '.join(str(x) for x in signed_model_representation)}]")
     print(f"Fitness value of best model : {int(round(model_fitness_value))}%")
