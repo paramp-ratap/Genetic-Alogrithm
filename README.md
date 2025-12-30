@@ -1,12 +1,4 @@
 # Genetic-Alogrithm
-
-# CS F407 — Programming Assignment 1
-
-**Course:** Artificial Intelligence (CS F407) — CSIS, BITS Pilani K. K. Birla Goa Campus
-
-**Total Marks:** 15  
-**Submission Deadline:** 9 PM on 07/09/2025 (Sunday)
-
 ---
 
 ## Overview
@@ -60,9 +52,7 @@ Fitness = (Number of satisfied clauses) / (Total number of clauses) × 100
 
 ---
 
-## Reporting (what to submit in the report)
-
-Your short report must include the following items:
+## Reporting
 
 1. **Average fitness graph:** for the improved algorithm, plot the average best fitness found (y‑axis) vs different values of `m` (x‑axis).
    - For each `m`, generate at least **10 random sentences** and report the average best fitness.
@@ -80,46 +70,11 @@ Your short report must include the following items:
 
 ---
 
-## Implementation details / program requirements
-
-- Submit **exactly two files**:
-  1. Your Python program: `ROLLXYZ FIRSTNAME.py`
-  2. Your report: `ROLLXYZ FIRSTNAME.pdf`
-- Use **only capital letters** in filenames (example): `2020H1030999G ADARSH.py` and `2020H1030999G ADARSH.pdf`.
-
-- Your program must:
-  - Implement **only** the improved GA version (baseline is for reference / comparison in the report).
-  - **Read the 3‑CNF from `CNF.csv`** using the provided `ReadCNFfromCSVfile()` function.
-  - Terminate within **45 seconds**.
-  - Produce output matching the sample image (`sample output.png`) format.
-
-- Multiple `.csv` test files are provided — ensure your program works across them.
-
-- Report any bugs in `CNF Creator.py` to the course IC.
-
----
-
-## Policies
-
-- **Plagiarism warning:** Any form of plagiarism will result in zero marks for everyone involved. No distinction will be made between minor and major cases.
-- **Late submission:** Deadline is strict at **9 PM**. Late submissions incur a penalty of **5 marks per day**.
-
----
-
 ## Useful reminders for implementation
 
 - Fitness evaluation: evaluating a model on `m` clauses should be implemented efficiently — this is the dominant cost if you evaluate many individuals and generations.
 - Keep careful control of runtime (45s limit). Consider using early stopping, elitism to preserve best individuals, and lightweight local improvements (e.g., greedy bit flips) if useful.
 - Produce the required figures (fitness vs m, runtime vs m) for the report and save raw results so you can compute averages across multiple random instances.
-
----
-
-*End of assignment.*
-
-# AI Assignment 1 — Param Pratap (2022A7PS1124G)
-
-**Student:** Param Pratap
-**ID:** 2022A7PS1124G
 
 ---
 
@@ -179,12 +134,4 @@ Your short report must include the following items:
 
 **Advice for hard instances:** hybridize with SAT-local searches (e.g., WalkSAT), use many short runs (restarts/portfolios), sweep parameters by regime, or use specialized SAT solvers (DPLL/CDCL) when guarantees are needed.
 
----
 
-## FINAL OUTPUTS
-
-* Screenshots of program outputs are included in the original PDF (page 6). They show example runs with command-line outputs and time taken per run.
-
----
-
-*Converted from the submitted PDF.*
